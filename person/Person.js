@@ -30,10 +30,25 @@ class Person{
      getName(){
         return this[_name]
      }
+     setName(value){
+      this[_name]=value
+
+     }
+     setBloodGrou(value){
+      this[_bloodGroup]=value
+     }
+     setContact(value){
+       return this[_contact]=value
+      
+     }
+      toString(){
+        console.log(`Name:${this[_name]} AND ID:${this[_id]}`)
+      }
 }
  const Person2 = new Person(73,"bubun")
+ console.log(Person2.setContact("saidpur"));
 console.log(Person2.getId())
 console.log(Person2.getName())
 
 
-module.exports = Person
+export default Person
