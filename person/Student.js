@@ -1,4 +1,4 @@
-import Person from "./Person";
+import Person from "./Person.js";
 
 const _course = Symbol("course");
 const _roll = Symbol("roll");

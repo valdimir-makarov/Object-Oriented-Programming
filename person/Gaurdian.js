@@ -1,14 +1,15 @@
-
+import Person from './Person.js'
 const _income = Symbol('income')
 const _profession= Symbol('profession')
 class Gaurdian extends Person{
 
 
 
-    constructor(name,profession,income){
+    constructor(name,profession,income,id){
         super(name,id)
         this[_profession]=profession
         this[_income]=income
+        this.id= id
 
     }
 
@@ -29,7 +30,8 @@ class Gaurdian extends Person{
      }
      toString(){
         console.log(`Profession:${this[_profession]}`)
-        console.log(`income ${this[_income]}`)
+        console.log(`income ${this[_income] }`)
+        console.log(`id ${this.id}`)
      }
      
 }
