@@ -5,15 +5,11 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-      "start": "node index.js"
+        "start": "node index.js"
     },
     "author": "Your Name",
     "license": "MIT",
-    "dependencies": {
-     
-    },
     "devDependencies": {
-      
+        "typescript": "^5.5.4"
     }
-  }
-  
+}
